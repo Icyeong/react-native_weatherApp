@@ -1,0 +1,38 @@
+{
+   "env": {
+      "browser": true,
+      "es2021": true,
+      "node": true
+   },
+   "extends": [
+      "plugin:react/recommended",
+      "plugin:import/recommended",
+      "plugin:jsx-a11y/recommended",
+      "plugin:prettier/recommended",
+      "eslint:recommended"
+      // "plugin:react/recommended",
+      // "airbnb",
+      //   "prettier",
+      //   "prettier/react",
+      //   "plugin:react/jsx-runtime"
+   ],
+   "overrides": [],
+   "parserOptions": {
+      "ecmaFeatures": {
+         "jsx": true
+      },
+      "ecmaVersion": "latest",
+      "sourceType": "module",
+      "parser": ["babel-eslint"]
+   },
+   "plugins": ["react", "react-native", "prettier"],
+   "rules": {
+      "react/react-in-jsx-scope": 0,
+      "react/jsx-uses-react": 0,
+      "react/prop-types": "off",
+      "comma-dangle": 0,
+      "import/no-named-as-default": 0,
+      "import/no-unresolved": "off",
+      "commonjs": 0
+   }
+}
